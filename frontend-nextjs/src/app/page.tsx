@@ -4,7 +4,7 @@ import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { 
   Package, ArrowRight, ShieldCheck, HeartHandshake, 
-  BarChart3, Truck, Award, Sparkles, Layers, X, CheckCircle2, Activity, Globe, Shirt,
+  BarChart3, Truck, Award, Sparkles, Layers, X, CheckCircle2, Activity, Shirt,
   Scale, Flame, Heart, RefreshCcw
 } from "lucide-react";
 
@@ -105,7 +105,7 @@ export default function LandingPage() {
       systemModule: "Modul Alokasi & Algoritma Penyaluran",
       liveStats: "120+ Komunitas Terverifikasi Sistem",
       featuresList: [
-        "Pencocokan otomatis kategori ukuran, usia, dan musim cuaca.",
+        "Pencatatan otomatis kategori ukuran, usia, dan musim cuaca.",
         "Verifikasi kuota panti asuhan dan yayasan sosial secara adil.",
         "Pencegahan penumpukan dan optimalisasi alokasi logistik."
       ],
@@ -135,23 +135,20 @@ export default function LandingPage() {
   return (
     <div className="relative z-10 min-h-screen bg-transparent text-slate-900 dark:text-slate-100 flex flex-col selection:bg-emerald-500 selection:text-white overflow-x-hidden">
       
-      {/* Background Decorative Glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[400px] sm:h-[500px] bg-emerald-500/10 dark:bg-emerald-500/5 blur-[120px] pointer-events-none rounded-full" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-96 sm:h-125 bg-emerald-500/10 dark:bg-emerald-500/5 blur-[120px] pointer-events-none rounded-full" />
       <div className="absolute top-40 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-teal-500/10 rounded-full blur-3xl pointer-events-none animate-pulse" />
       <div className="absolute top-96 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none animate-pulse" style={{ animationDuration: '4s' }} />
 
-      {/* HERO SECTION DENGAN KONTEN1.JPG (RESPONSIF GRID) */}
       <section className="relative overflow-hidden py-12 sm:py-20 px-4 sm:px-6 lg:py-28">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Kolom Teks Utama */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-emerald-500/10 dark:bg-emerald-950/80 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-bold shadow-lg shadow-emerald-500/5 backdrop-blur-md animate-bounce">
               <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Platform Ekosistem Sirkular Terpadu 2026
             </div>
             
             <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-[1.15]">
-              Transformasi <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-400 dark:from-emerald-400 dark:to-teal-300">Surplus Pakaian</span> Menjadi Harapan Berkelanjutan
+              Transformasi <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-600 via-teal-500 to-emerald-400 dark:from-emerald-400 dark:to-teal-300">Surplus Pakaian</span> Menjadi Harapan Berkelanjutan
             </h1>
             
             <p className="text-sm sm:text-lg lg:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
@@ -159,19 +156,18 @@ export default function LandingPage() {
             </p>
           </div>
 
-          {/* Kolom Gambar Menggunakan /konten1.jpg */}
           <div className="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none">
-            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-teal-400 rounded-3xl blur-2xl opacity-25 dark:opacity-35 scale-95 pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-tr from-emerald-500 to-teal-400 rounded-3xl blur-2xl opacity-25 dark:opacity-35 scale-95 pointer-events-none" />
             <div className="relative bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 p-3 sm:p-4 rounded-3xl shadow-2xl shadow-emerald-900/10 dark:shadow-black/60 transform hover:scale-[1.02] transition-transform duration-500 overflow-hidden group">
-              <div className="rounded-2xl overflow-hidden aspect-[4/3] relative shadow-inner">
+              <div className="rounded-2xl overflow-hidden aspect-video relative shadow-inner">
                 <img 
                   src="/konten1.jpg" 
                   alt="Donasi Pakaian Berkelanjutan" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6">
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6">
                   <div className="text-white space-y-1">
-                    <div className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-emerald-400">Gerakan Nyata</div>
+                    <div className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-emerald-300">Gerakan Nyata</div>
                     <div className="text-xs sm:text-base font-extrabold">Penyaluran Layak Pakai Langsung ke Tangan Sesama</div>
                   </div>
                 </div>
@@ -181,9 +177,8 @@ export default function LandingPage() {
 
         </div>
 
-        {/* 3D Interactive Card Mockup */}
-        <div className="max-w-5xl mx-auto mt-12 sm:mt-20 relative perspective-[1200px] px-2 sm:px-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-20 dark:opacity-30 -rotate-1 scale-95 pointer-events-none" />
+        <div className="max-w-5xl mx-auto mt-12 sm:mt-20 relative px-2 sm:px-0">
+          <div className="absolute inset-0 bg-linear-to-r from-emerald-500 to-teal-500 rounded-3xl blur-2xl opacity-20 dark:opacity-30 -rotate-1 scale-95 pointer-events-none" />
           
           <div 
             ref={cardRef}
@@ -193,11 +188,11 @@ export default function LandingPage() {
               transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
               transition: "transform 0.1s ease-out",
             }}
-            className="relative bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 p-6 sm:p-8 rounded-3xl shadow-2xl shadow-slate-900/10 dark:shadow-black/50 cursor-pointer transform-gpu"
+            className="relative bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 p-6 sm:p-8 rounded-3xl shadow-2xl shadow-slate-900/10 dark:shadow-black/50 cursor-pointer"
           >
             <div className="flex items-center justify-between pb-4 sm:pb-6 border-b border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-3">
-                <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center shadow-lg shadow-emerald-600/30 transform-gpu animate-bounce duration-1000 shrink-0">
+                <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-linear-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center shadow-lg shadow-emerald-600/30 animate-bounce duration-1000 shrink-0">
                   <Shirt className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse" />
                   <div className="absolute inset-0 rounded-2xl bg-white/20 animate-ping opacity-30 pointer-events-none" />
                 </div>
@@ -219,22 +214,21 @@ export default function LandingPage() {
                 <div className="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-100 mt-1">8,450 Pcs</div>
                 <div className="text-[11px] sm:text-xs text-emerald-600 dark:text-emerald-500 mt-2 font-medium">Siap Distribusi Tahap II</div>
               </div>
-              <div className="p-4 sm:p-5 rounded-2xl bg-blue-50/50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/50 hover:scale-105 transition-transform">
-                <div className="text-blue-600 dark:text-blue-400 font-bold text-xs sm:text-sm">Resi Aktif Kurir</div>
+              <div className="p-4 sm:p-5 rounded-2xl bg-teal-50/50 dark:bg-teal-950/30 border border-teal-100 dark:border-teal-900/50 hover:scale-105 transition-transform">
+                <div className="text-teal-600 dark:text-teal-400 font-bold text-xs sm:text-sm">Resi Aktif Kurir</div>
                 <div className="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-100 mt-1">14 Pengiriman</div>
-                <div className="text-[11px] sm:text-xs text-blue-600 dark:text-blue-500 mt-2 font-medium">Dalam Perjalanan</div>
+                <div className="text-[11px] sm:text-xs text-teal-600 dark:text-teal-500 mt-2 font-medium">Dalam Perjalanan</div>
               </div>
-              <div className="p-4 sm:p-5 rounded-2xl bg-purple-50/50 dark:bg-purple-950/30 border border-purple-100 dark:border-purple-900/50 hover:scale-105 transition-transform">
-                <div className="text-purple-600 dark:text-purple-400 font-bold text-xs sm:text-sm">Validasi Komunitas</div>
+              <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 hover:scale-105 transition-transform">
+                <div className="text-emerald-600 dark:text-emerald-400 font-bold text-xs sm:text-sm">Validasi Komunitas</div>
                 <div className="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-100 mt-1">100% Verified</div>
-                <div className="text-[11px] sm:text-xs text-purple-600 dark:text-purple-500 mt-2 font-medium">Zero Waste Certified</div>
+                <div className="text-[11px] sm:text-xs text-emerald-600 dark:text-emerald-500 mt-2 font-medium">Zero Waste Certified</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* MENGAPA HARUS DONASI */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 max-w-7xl mx-auto w-full">
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
@@ -260,7 +254,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* STATS SECTION */}
       <section className="border-y border-slate-200/80 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md py-10 sm:py-12 px-4 sm:px-6 shadow-sm">
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
           {stats.map((item, idx) => (
@@ -272,7 +265,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* INTERACTIVE WORKFLOW SECTION */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 max-w-7xl mx-auto w-full">
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-bold">
@@ -316,9 +308,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SECURE SYSTEM MODAL INSPECTOR */}
       {selectedStep && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-md">
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative space-y-6 max-h-[90vh] overflow-y-auto">
             <button 
               onClick={() => setSelectedStep(null)}
@@ -367,7 +358,6 @@ export default function LandingPage() {
         </div>
       )}
 
-      {/* MODUL PINTAR PENGELOLAAN */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 max-w-7xl mx-auto w-full border-t border-slate-200/80 dark:border-slate-800">
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-4">
           <h2 className="text-2xl sm:text-4xl font-black tracking-tight">Modul Pintar Pengelolaan</h2>
@@ -389,7 +379,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SECTION TESTIMONI & IMPACT */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50/50 dark:bg-slate-900/30 border-y border-slate-200/80 dark:border-slate-800">
         <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-4">
@@ -411,9 +400,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CALL TO ACTION BANNER */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 max-w-5xl mx-auto w-full text-center">
-        <div className="relative overflow-hidden p-8 sm:p-16 rounded-3xl bg-gradient-to-br from-emerald-600 via-teal-600 to-emerald-700 text-white shadow-2xl shadow-emerald-600/30 space-y-6 sm:space-y-8 transform hover:scale-[1.01] transition-transform">
+        <div className="relative overflow-hidden p-8 sm:p-16 rounded-3xl bg-linear-to-br from-emerald-600 via-teal-600 to-emerald-700 text-white shadow-2xl shadow-emerald-600/30 space-y-6 sm:space-y-8 transform hover:scale-[1.01] transition-transform">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent_50%)] pointer-events-none" />
           <h2 className="text-2xl sm:text-5xl font-black tracking-tight relative z-10 leading-tight">Mulai Gerakan Kebaikan Sirkular Hari Ini</h2>
           <p className="text-xs sm:text-base text-emerald-100 max-w-2xl mx-auto relative z-10 font-medium">
